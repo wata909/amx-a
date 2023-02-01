@@ -17,9 +17,7 @@ body { margin: 0; }
 let protocol = new pmtiles.Protocol()
 maplibregl.addProtocol("pmtiles", protocol.tile)
 
-# let URL = "https://x.optgeo.org/a.pmtiles"
-# add mirror site
-let URL = "https://habs.rad.naro.go.jp/spatial_data/amx/a.pmtiles"
+  let URL = "https://habs.rad.naro.go.jp/spatial_data/amx/a.pmtiles"
 
 
 fetch(URL, {method: "HEAD"}).then(resp => {
